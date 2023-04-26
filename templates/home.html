@@ -6,11 +6,21 @@
 </head>
 <body>
     <h1>Weather Data API</h1>
+    <h3>Enter dates with a dash - in between the 4 digit year, the 2 digit month and the 2 digit day</h3>
     <p>URL Format: http://127.0.0.1:5000/api/v1/station/date</p>
-    <p>Below is an example url.</p>
-    <p>Enter dates with a dash - in between the 4 digit year, the 2 digit month and the 2 digit day</p>
     <p>URL Example: http://127.0.0.1:5000/api/v1/10/1988-10-25</p>
     <br>
+    <h3>Enter the station and year to see the station data for a single year</h3>
+    <p>URL Year Format:  http://127.0.0.1:5000/api/v1/yearly/station/year</p>
+    <p>URL Year Example:  http://127.0.0.1:5000/api/v1/yearly/10/1988</p>
+    <br>
+    <h3>Enter the station code for the station</h3>
+    <p>URL Format: http://127.0.0.1:5000/api/v1/station</p>
+    <p>URL Station Example: http://127.0.0.1:5000/api/v1/10</p>
+
+
+    <br>
+    <h3>Listed below is a list of all the station ids:</h3>
     <p>{{ data|safe }}</p>
 </body>
 </html>
